@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    font-size: 6vh;
+    color: rgb(152, 86, 214);
+    font-weight: 700;
+    margin-top: 7vh;
+    margin-bottom: 6vh;
+}
+
+.city {
+    width: 25vw;
+    border: 1px solid gray;
+    border-radius: 1vh;
+    padding: 1vh;
+}
+
+button {
+    background-color: rgb(152, 86, 214);
+    color: white;
+    font-weight: 400;
+    border: none;
+    border-radius: 1vh;
+    width: 11vh;
+    height: 4vh;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(152, 86, 214);
+}
+
+.cityname {
+    color: blueviolet;
+    font-weight: 500;
+    font-size: 3vw;
+}
+
+.icon {
+    height: 10vh;
+}
+
+.cityandicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vw;
+}
+
+.card {
+    color: rgb(117, 38, 151);
+    display: flex;
+    justify-content: center;
+}
+
+.lastupdated {
+    font-size: 0.8rem;
+}
+
+.fontsize {
+    font-size: 3vh;
+}
+
+.sunandcloud {
+    height: 50vh;
+    position: absolute;
+    top: 0vh;
+    transition: all 1s;
+
+}
+
+.sunandcloud:hover {
+    translate: 0 2vh 0;
+}
+
+
+.animation {
+    animation: ani 40s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+}
+
+@keyframes ani {
+    0% {
+       transform: translateX(0);
+    }
+
+    25% {
+       transform: translateX(100px);
+    }
+
+    50% {
+       transform: translateX(0);
+    }
+
+    75% {
+       transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.days {
+    display: flex;
+    max-width: 100vw;
+    overflow-x: auto;
+    gap: 4vw;
+    overflow-y: hidden;
+}
+
+.maincard {
+    display: flex;
+    flex-direction: column;
+}
+
+.seccard {
+    margin-top: 10vh;
+}
+
+.heading {
+    text-align: center;
+    color: rgb(70, 97, 172);
+    font-size: 3vh;
+    font-weight: 600;
+}
+
+
+
+.colorf {
+    color: rgb(97, 75, 197);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -25vh;
+    width: 63vw;
+}
+.each{
+    transition: all 0.5s;
+}
+.each:hover{
+    transform: translateY(-10px);
+    border: none;
+    box-shadow: 0px 1px 0px pink;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-size: 2vh;
+    margin-bottom: 2vh;
+}
+.modeimg{
+    height: 3vh;
+    position: absolute;
+    top: 12vh;
+    right: 10vw;
+}
+.modeimg:hover{
+    cursor: pointer;
+}
+@keyframes animob {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(70px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    75% {
+        transform: translateX(-70px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+.btns{
+    position: absolute;
+    top: 28vh;
+    left: 65vw;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+
+@media(max-width:400px){
+   header{
+    font-size: 3vh;
+    margin-bottom: 1vh;
+   }
+   .city{
+    width: 62vw;
+   }
+   .sunandcloud{
+    height: 30vh;
+    top: 10vh;
+   }
+   .animation{
+    animation: animob 40s linear infinite;
+   }
+   .fontsize{
+    font-size: 2vh;
+   }
+   .cityandicon{
+    height: 3vh;
+   }
+   .cityname{
+    font-size: 3vh;
+    white-space: nowrap;
+   }
+   .seccard{
+    font-size: 0.7rem;
+    margin-top: 3vh;
+   }
+   .lastupdated{
+    font-size: 0.6rem;
+   }
+   .fontsizef{
+    font-size: 0.7rem;
+   }
+   .icon{
+    height:8vh ;
+   }
+   .iconf{
+    height: 7vh;
+   }
+   .datef{
+    white-space: nowrap;
+   }
+   footer{
+    width:100vw;
+    margin-bottom:0vh;
+   }
+   .forecast{
+    margin-top: 12vh;
+   }
+   .card{
+    margin-top: 8vh;
+   }
+   .btns{
+    position: absolute;
+    top: 23vh;
+    left: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 1vh;
+   }
+   .modeimg{
+    top: 3vh;
+   }
+   
+}
+.live{
+    font-size: 0.7rem;
+    white-space: nowrap;
+}
